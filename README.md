@@ -2,9 +2,9 @@
 Display LCD Picon for GigaBlue UHD EU 4k on OpenPLI
 
 ## Screen
-![TF1](https://github.com/AkA57/openPLI-gblueUHD-PiconLCD/blob/dev/screenshot/TF1.png)
-![W9](https://github.com/AkA57/openPLI-gblueUHD-PiconLCD/blob/dev/screenshot/W9.png)
-![Canal](https://github.com/AkA57/openPLI-gblueUHD-PiconLCD/blob/dev/screenshot/Canal.png)
+![TF1](https://github.com/AkA57/openPLI-gblueUHD-PiconLCD/blob/main/screenshot/TF1.png)
+![W9](https://github.com/AkA57/openPLI-gblueUHD-PiconLCD/blob/main/screenshot/W9.png)
+![Canal](https://github.com/AkA57/openPLI-gblueUHD-PiconLCD/blob/main/screenshot/Canal.png)
 
 ## Installation 
 - Copy **LcdPicon.py** to **/usr/lib/enigma2/python/Components/Renderer**
