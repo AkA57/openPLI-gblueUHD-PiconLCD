@@ -12,7 +12,7 @@ class LcdPicon(Renderer):
 #	searchPaths = ('/usr/share/enigma2/%s/',
 #				'/media/sda1/%s/',
 #				'/media/USB/%s/')
-
+# 1_0_19_2460_440_1_C00000_0_0_0
 	def __init__(self):
 		Renderer.__init__(self)
 		self.path = "piconlcd"
@@ -55,6 +55,14 @@ class LcdPicon(Renderer):
 					pngname = self.findPicon(sname)
 					if pngname != "":
 						self.nameCache[sname] = pngname
+
+			if pngname == "": # no picon for service found, trying to change channel reference => 1_0_19_2460_440_1_C00000_0_0_0 to 1_0_1_2460_440_1_C00000_0_0_0
+				sname = "1_0_1" + sname[sname.index('_',4):]	
+				pngname = self.nameCache.get(sname, "")
+				if pngname == "":
+					pngname = self.findPicon(sname)
+					if pngname != "":
+						self.nameCache[sname] = pngname									
 			if pngname == "": # no picon for service found
 				pngname = self.nameCache.get("default", "")
 				if pngname == "": # no default yet in cache..
