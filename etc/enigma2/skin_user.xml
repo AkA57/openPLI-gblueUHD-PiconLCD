@@ -135,7 +135,7 @@
 	</screen>
 	<!-- M -->
 	<screen name="MenuSummary" position="fill">
-		<widget source="parent.SummaryTitle" render="Label" position="top" size="220,45" font="FdLcD;20" halign="left" valign="top" />
+		<widget source="Title" render="Label" position="top" size="220,45" font="FdLcD;20" halign="left" valign="top" />
 		<widget source="parent.menu" render="Label" position="top" size="220,90" font="FdLcD;25" halign="center" valign="center">
 			<convert type="StringListSelection" />
 		</widget>
@@ -194,7 +194,8 @@
 		<widget source="SetupValue" render="Label" position="top" size="220,51" font="FdLcD;25" halign="left" />
 	</screen>
 	<screen name="SimpleSummary" position="fill">
-		<widget source="parent.SummaryTitle" render="Label" position="center,center" size="220,176" font="FdLcD;30" halign="center" valign="center" />
+		<!-- <widget source="parent.SummaryTitle" render="Label" position="center,center" size="220,176" font="FdLcD;30" halign="center" valign="center" /> -->
+		<widget source="Title" render="Label" position="center,center" size="220,176" font="FdLcD;30" halign="center" valign="center" />
 	</screen>
 	<screen name="SoftwareUpdateChanges_summary" position="fill">
 		<widget source="parent.SummaryTitle_summary" render="Label" position="0,0" size="220,15" font="FdLcD;15" halign="left" noWrap="1" />
